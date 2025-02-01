@@ -1,0 +1,130 @@
+:root {
+    --Green: #c4f729;
+    --White: #ffffff;
+    --Grey700: #333333;
+    --Grey800: #1f1f1f;
+    --Grey900: #141414;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt_wght.ttf') format('truetype'),
+         url('./assets/fonts/static/Inter-Bold.ttf') format('truetype'),
+         url('./assets/fonts/static/Inter-Regular.ttf') format('truetype'),
+         url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 400 600 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.3s;
+}
+
+html, body {
+    height: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey900);
+    color: var(--White);
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main-section {
+    max-width: 19rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card-section {
+    background-color: var(--Grey800);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 var(--Grey800);
+    padding: 2.5rem 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+  }
+
+
+  .card-section img {
+    border-radius: 50%;  
+    height: 4.2rem;
+    width: 4.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-section .name {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .address {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--Green);
+  }
+
+  .about-me {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgb(185, 185, 185);
+    margin: 0.7rem;
+    white-space: nowrap;
+  }
+
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.73rem;
+  }
+
+  .nav-links .link {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey700);
+    box-shadow: 0 0 0 var(--Grey700);
+    border-radius: 7px;
+    padding: 0.3rem 4.6rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .nav-links .link:hover {
+    background-color: var(--Green);
+    color: var(--Grey900);
+  }
+
+@media (min-width: 1024px) {
+  .main-section {
+    max-width: 20rem;
+  }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
